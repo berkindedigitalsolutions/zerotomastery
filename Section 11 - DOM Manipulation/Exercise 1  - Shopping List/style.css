@@ -1,40 +1,76 @@
-.coolTitle {
-    text-align: center;
-    font-family: 'Oswald', Helvetica, sans-serif;
-    font-size: 40px;
-    transform: skewY(-10deg);
-    letter-spacing: 4px;
-    word-spacing: -8px;
-    color: tomato;
-    text-shadow:
-    -1px -1px 0 firebrick,
-    -2px -2px 0 firebrick,
-    -3px -3px 0 firebrick,
-    -4px -4px 0 firebrick,
-    -5px -5px 0 firebrick,
-    -6px -6px 0 firebrick,
-    -7px -7px 0 firebrick,
-    -8px -8px 0 firebrick,
-    -30px -30px -40px dimgrey;
+*, *::before,*::after {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+  :root {
+    --ff-primary:  'Nunito', sans-serif;
+    --ff-secondary:'Nunito', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #F2B886;
+
+    --fs-h1: 5rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,0.25), 0.125em 0.125em 0.25em rgba(0,0,0,0.25);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: var(--ff-primary);
+    background: linear-gradient(to right, rgb(119, 230, 216), rgb(128, 76, 254));
+}
+
+h1 {font-size: var(--fs-h1); }
+h2 {font-size: var(--fs-h2);}
+h3 {font-size: var(--fs-h3);}
+
+/**** Header Section *****/
+
+.logo {
+    width: 100px;
+    height: auto;
+ }
+
+ .sticky {
+  position:fixed;
+  top: 0;
+  width: 100%;
 
 }
+
 .done {
     text-decoration: line-through;
 }
 
 
-.container {
+.shopping-container {
 display: flex;
 margin: 0 auto;
 flex-direction: column;
 width: 500px;
+padding: 1em;
 align-items: center;
+border: 1px solid black;
+border-radius: 5px;
+box-shadow: var(--bs);
+background-color: #FFF;
 }
 
 #userinput {
     margin-bottom: 20px;
     width: 480px;
-    height: 20px;
+    height: 40px;
     background-color: rgb(221, 233, 255);
     border-radius: 5px;
     border: 1px solid black;
