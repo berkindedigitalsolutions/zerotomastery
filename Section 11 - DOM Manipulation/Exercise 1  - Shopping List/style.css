@@ -1,0 +1,88 @@
+.coolTitle {
+    text-align: center;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-size: 40px;
+    transform: skewY(-10deg);
+    letter-spacing: 4px;
+    word-spacing: -8px;
+    color: tomato;
+    text-shadow:
+    -1px -1px 0 firebrick,
+    -2px -2px 0 firebrick,
+    -3px -3px 0 firebrick,
+    -4px -4px 0 firebrick,
+    -5px -5px 0 firebrick,
+    -6px -6px 0 firebrick,
+    -7px -7px 0 firebrick,
+    -8px -8px 0 firebrick,
+    -30px -30px -40px dimgrey;
+
+}
+.done {
+    text-decoration: line-through;
+}
+
+
+.container {
+display: flex;
+margin: 0 auto;
+flex-direction: column;
+width: 500px;
+align-items: center;
+}
+
+#userinput {
+    margin-bottom: 20px;
+    width: 480px;
+    height: 20px;
+    background-color: rgb(221, 233, 255);
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+
+}
+#enter {
+    color: white;
+    background-color: green;
+    border-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    width: 100%;
+    padding: 0;
+}
+li {
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+li:hover {
+    background-color: #d1d0d0;
+    cursor: pointer;
+}
+.li-done {
+    background-color: rgba(194, 228, 194, 0.5);
+    border: 2px solid green;
+}
+.li-done:hover {
+    background-color: rgba(194, 228, 194);
+}
+
+.delete {
+    background-color: red;
+    color: #FFF;
+    margin-left: auto;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.delete:hover {
+    background-color: rgb(211, 3, 3);
+    cursor: pointer;
+}
