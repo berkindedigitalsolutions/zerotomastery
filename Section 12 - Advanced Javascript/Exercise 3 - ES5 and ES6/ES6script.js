@@ -48,3 +48,28 @@ const obj = {
 const obj = { a,b, c};
 
 //Template strings
+const name = "Sally";
+const age = 34;
+const pet = "horse";
+
+const greeetingBest =  `Hello ${name} you seem to be ${age-10}. What a lovely ${pet} you have.`
+
+// Default arguments 
+
+function greet(name ='',age=30, pet='dog') {
+    return `Hello ${name} you seem to be ${age-10}. What a lovely ${pet} you have.`
+}
+
+// Symbol Variables
+
+let sym1 = Symbol();
+let sym2 = Symbol('foo');
+let sym3 = Symbol('foo');
+
+sym2 === sym3; //returns false
+
+//arrow functions
+function add(a,b) {
+    return a+b;
+}
+const add2 = (a,b) => a + b;
